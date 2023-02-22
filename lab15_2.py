@@ -1,3 +1,4 @@
+#   "Rock, paper, scissors" game
 import random
 
 
@@ -9,6 +10,7 @@ VICTORIES = {
 }
 
 
+# here the player chooses a Rock, Paper or Scissors
 def get_user_selection(actions):
     choices = [f"{action}[{num}]" for num, action in enumerate(actions)]
     choices_str = ", ".join(choices)
@@ -17,6 +19,7 @@ def get_user_selection(actions):
     return user_action
 
 
+# choosing a computer action based on randomness
 def get_computer_selection(actions):
     computer_action = random.choice(actions)
     return computer_action
